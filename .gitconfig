@@ -1,0 +1,10 @@
+[user]
+  name = 1000ch
+  email = shogo.sensui@gmail.com
+[core]
+  deltaBaseCacheLimit = 1G
+[mergetool]
+  keepBackup = true
+[filter "media"]
+  clean = git-media-clean %f
+  smudge = git-media-smudge %f
