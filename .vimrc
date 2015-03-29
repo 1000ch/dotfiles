@@ -17,8 +17,4 @@ set termencoding=utf-8
 set title
 set wildmenu
 set wrapscan
-
 filetype off
-
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
