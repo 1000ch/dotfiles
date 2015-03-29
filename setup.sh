@@ -1,11 +1,8 @@
 # set up oh-my-zsh
-curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+~/dotfiles/oh-my-zsh/tools/install.sh | ZSH=~/dotfiles/oh-my-zsh sh
 
-# install powerline theme
-git clone git@github.com:jeremyFreeAgent/oh-my-zsh-powerline-theme.git
-pushd oh-my-zsh-powerline-theme
-sh ./install_in_omz.sh
-popd
+# create hard-link to oh-my-zsh-powerline-theme from oh-my-zsh/themes
+ln -f ~/dotfiles/oh-my-zsh-powerline-theme/powerline.zsh-theme ~/dotfiles/oh-my-zsh/themes/powerline.zsh-theme
 
 # install nvm
 git clone https://github.com/creationix/nvm.git ~/.nvm
