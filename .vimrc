@@ -1,20 +1,34 @@
-set autoindent
+syntax enable
+
 set autoread
 set encoding=utf-8
-set expandtab
 set ignorecase
-set list
 set mouse=a
 set nobackup
 set nocompatible
 set noswapfile
-set number
-set ruler
 set showmatch
 set showmode
-set smartindent
 set termencoding=utf-8
+
+"linenumber
+set number
+
+"linebreak
+set list
+
+"indent
+set autoindent
+set smartindent
+
+"tab
+set expandtab
+set tabstop=2
+set softtabstop=2
+
+set ruler
 set title
 set wildmenu
 set wrapscan
+
 filetype off
