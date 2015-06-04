@@ -12,6 +12,12 @@ brew bundle
 brew cleanup
 
 
+
+# set installed zsh as default
+echo "/usr/local/bin/zsh" >> /etc/shells
+chsh -s /usr/local/bin/zsh
+
+
 # set up oh-my-zsh
 ~/dotfiles/oh-my-zsh/tools/install.sh | ZSH=~/dotfiles/oh-my-zsh sh
 # create hard-link to oh-my-zsh-powerline-theme from oh-my-zsh/themes
@@ -36,6 +42,9 @@ git clone https://github.com/yyuu/pyenv.git ~/.pyenv
 
 
 # symlinks
+if [ -f ~/.zshrc ]; then
+  rm ~/.zshrc
+fi
 ln -s ~/dotfiles/.zshrc ~/.zshrc
 ln -s ~/dotfiles/.zprofile ~/.zprofile
 ln -s ~/dotfiles/.gemrc ~/.gemrc
