@@ -21,14 +21,15 @@ chsh -s /usr/local/bin/zsh
 
 
 # set up oh-my-fish
-~/dotfiles/oh-my-fish/tools/install.fish | fish
+curl -L https://github.com/bpinto/oh-my-fish/raw/master/tools/install.fish | fish
 
 
 
 # set up oh-my-zsh
-~/dotfiles/oh-my-zsh/tools/install.sh | ZSH=~/dotfiles/oh-my-zsh sh
+curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 # create hard-link to oh-my-zsh-powerline-theme from oh-my-zsh/themes
-ln -f ~/dotfiles/oh-my-zsh-powerline-theme/powerline.zsh-theme ~/dotfiles/oh-my-zsh/themes/powerline.zsh-theme
+git clone git@github.com:jeremyFreeAgent/oh-my-zsh-powerline-theme.git ~/.oh-my-zsh-powerline-theme
+ln -f ~/.oh-my-zsh-powerline-theme/powerline.zsh-theme ~/.oh-my-zsh/themes/powerline.zsh-theme
 
 
 
@@ -49,9 +50,13 @@ git clone https://github.com/yyuu/pyenv.git ~/.pyenv
 
 
 # symlinks
+if [ -f ~/.config/fish/config.fish ]; then
+  rm ~/.config/fish/config.fish
+fi
 if [ -f ~/.zshrc ]; then
   rm ~/.zshrc
 fi
+ln -s ~/dotfiles/.config.fish ~/.config/fish/config.fish
 ln -s ~/dotfiles/.zshrc ~/.zshrc
 ln -s ~/dotfiles/.zprofile ~/.zprofile
 ln -s ~/dotfiles/.gemrc ~/.gemrc
