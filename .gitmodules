@@ -6,3 +6,6 @@
 	path = oh-my-zsh-powerline-theme
 	url = git@github.com:jeremyFreeAgent/oh-my-zsh-powerline-theme.git
 	ignore = dirty
+[submodule "oh-my-fish"]
+	path = oh-my-fish
+	url = git@github.com:oh-my-fish/oh-my-fish.git
