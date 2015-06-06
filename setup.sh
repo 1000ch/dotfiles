@@ -13,9 +13,16 @@ brew cleanup
 
 
 
-# set installed zsh as default
+# set installed zsh & fish
 echo "/usr/local/bin/zsh" >> /etc/shells
+echo "/usr/local/bin/fish" >> /etc/shells
 chsh -s /usr/local/bin/zsh
+
+
+
+# set up oh-my-fish
+~/dotfiles/oh-my-fish/tools/install.fish | fish
+
 
 
 # set up oh-my-zsh
