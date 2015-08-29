@@ -1,4 +1,5 @@
 # completion
+plugins+=(zsh-completions)
 autoload -Uz compinit
 compinit
 
