@@ -31,7 +31,8 @@ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | 
 git clone git@github.com:jeremyFreeAgent/oh-my-zsh-powerline-theme.git ~/.oh-my-zsh-powerline-theme
 ln -f ~/.oh-my-zsh-powerline-theme/powerline.zsh-theme ~/.oh-my-zsh/themes/powerline.zsh-theme
 git clone https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
-
+git clone https://github.com/milkbikis/powerline-shell ~/.powerline-shell
+cd ~/.powerline-shell/;./install.sh
 
 
 # install nvm
