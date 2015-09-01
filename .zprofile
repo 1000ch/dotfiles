@@ -16,7 +16,7 @@ if [ "$TERM" != "linux" ]; then
 fi
 
 # completion
-fpath=($HOME/.zsh-completions/src $fpath)
+plugins+=(zsh-completions)
 autoload -Uz compinit
 compinit
 
