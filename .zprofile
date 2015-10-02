@@ -33,8 +33,8 @@ setopt print_eight_bit
 # set comment as #
 setopt interactive_comments
 
-# nvm
-[ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh
+# nodebrew
+export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
