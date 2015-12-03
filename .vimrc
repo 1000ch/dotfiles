@@ -6,6 +6,7 @@ set ignorecase
 set mouse=a
 set nobackup
 set nocompatible
+set backspace=indent,eol,start
 set noswapfile
 set showmatch
 set showmode
