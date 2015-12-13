@@ -36,6 +36,7 @@ nodebrew selfupdate
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 cd ~/.rbenv;git pull origin master
+cd ~/.rbenv/plugins/ruby-build;git pull origin master
 
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
