@@ -15,11 +15,6 @@ if [ "$TERM" != "linux" ]; then
     install_powerline_precmd
 fi
 
-# completion
-plugins+=(zsh-completions)
-autoload -Uz compinit
-compinit
-
 if [ -n "$LS_COLORS" ]; then
  zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 fi
