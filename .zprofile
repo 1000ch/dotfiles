@@ -12,11 +12,11 @@ function install_powerline_precmd() {
 }
 
 if [ "$TERM" != "linux" ]; then
-    install_powerline_precmd
+  install_powerline_precmd
 fi
 
 if [ -n "$LS_COLORS" ]; then
- zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+  zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 fi
 
 # lang
@@ -30,17 +30,18 @@ setopt interactive_comments
 
 # nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
+nodebrew selfupdate
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+cd ~/.rbenv;git pull origin master
 
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+cd ~/.pyenv;git pull origin master
 
-localconfig=~/.localconfig
-if [ -e $localconfig ]; then
-  source $localconfig
-fi
+cd ~
+clear
