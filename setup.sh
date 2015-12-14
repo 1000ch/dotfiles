@@ -42,13 +42,9 @@ git clone https://github.com/yyuu/pyenv.git ~/.pyenv
 
 
 # symlinks
-if [ -f ~/.config/fish/config.fish ]; then
-  rm ~/.config/fish/config.fish
-fi
 if [ -f ~/.zshrc ]; then
   rm ~/.zshrc
 fi
-ln -s ~/dotfiles/.config.fish ~/.config/fish/config.fish
 ln -s ~/dotfiles/.zshrc ~/.zshrc
 ln -s ~/dotfiles/.zprofile ~/.zprofile
 ln -s ~/dotfiles/.gemrc ~/.gemrc
