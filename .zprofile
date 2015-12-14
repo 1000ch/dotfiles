@@ -11,6 +11,15 @@ function install_powerline_precmd() {
   precmd_functions+=(powerline_precmd)
 }
 
+function update() {
+  # update version managers
+  nodebrew selfupdate
+  pushd ~/.rbenv;git pull origin master
+  pushd ~/.rbenv/plugins/ruby-build;git pull origin master
+  pushd ~/.pyenv;git pull origin master
+  popd && popd && popd && clear
+}
+
 if [ "$TERM" != "linux" ]; then
   install_powerline_precmd
 fi
@@ -35,12 +44,3 @@ eval "$(rbenv init -)"
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
-
-# update version managers
-nodebrew selfupdate
-cd ~/.rbenv;git pull origin master
-cd ~/.rbenv/plugins/ruby-build;git pull origin master
-cd ~/.pyenv;git pull origin master
-
-cd ~
-clear
