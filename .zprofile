@@ -18,6 +18,8 @@ function update() {
   pushd ~/.rbenv/plugins/ruby-build;git pull origin master
   pushd ~/.pyenv;git pull origin master
   popd && popd && popd && clear
+  brew update
+  brew upgrade
 }
 
 if [ "$TERM" != "linux" ]; then
