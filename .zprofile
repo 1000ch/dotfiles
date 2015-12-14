@@ -28,20 +28,18 @@ setopt print_eight_bit
 # set comment as #
 setopt interactive_comments
 
-# nodebrew
+# nodebrew, rbenv, pyenv
 export PATH=$HOME/.nodebrew/current/bin:$PATH
-nodebrew selfupdate
-
-# rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
-cd ~/.rbenv;git pull origin master
-cd ~/.rbenv/plugins/ruby-build;git pull origin master
-
-# pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+# update version managers
+nodebrew selfupdate
+cd ~/.rbenv;git pull origin master
+cd ~/.rbenv/plugins/ruby-build;git pull origin master
 cd ~/.pyenv;git pull origin master
 
 cd ~
