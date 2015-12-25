@@ -12,7 +12,11 @@ function install_powerline_precmd() {
 }
 
 function update() {
-  # update version managers
+  # update zplug
+  zplug update
+  gem update
+
+# update version managers
   nodebrew selfupdate
   pushd ~/.rbenv;git pull origin master;popd
   pushd ~/.rbenv/plugins/ruby-build;git pull origin master;popd
