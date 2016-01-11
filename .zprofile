@@ -28,6 +28,14 @@ function update() {
   clear
 }
 
+function sublimetext() {
+  open -a Sublime\ Text $1
+}
+
+function tower() {
+  open -a Tower $1
+}
+
 if [ "$TERM" != "linux" ]; then
   install_powerline_precmd
 fi
