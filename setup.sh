@@ -41,6 +41,12 @@ git clone https://github.com/yyuu/pyenv.git ~/.pyenv
 
 
 
+# install plenv & perl-build
+git clone https://github.com/tokuhirom/plenv.git ~/.plenv
+git clone https://github.com/tokuhirom/Perl-Build.git ~/.plenv/plugins/perl-build
+
+
+
 # symlinks
 if [ -f ~/.zshrc ]; then
   rm ~/.zshrc

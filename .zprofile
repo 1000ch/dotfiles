@@ -16,11 +16,13 @@ function update() {
   zplug update
   gem update
 
-# update version managers
+  # update version managers
   nodebrew selfupdate
   pushd ~/.rbenv;git pull origin master;popd
   pushd ~/.rbenv/plugins/ruby-build;git pull origin master;popd
-  pushd ~/.pyenv;git pull origin master;popd;
+  pushd ~/.pyenv;git pull origin master;popd
+  pushd ~/.plenv:git pull origin master;popd
+  pushd ~/.plenv/plugins/perl-build:git pull origin master;popd
   brew update
   brew upgrade
   clear
@@ -50,3 +52,5 @@ eval "$(rbenv init -)"
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+export PATH="$HOME/.plenv/bin:$PATH"
+eval "$(plenv init -)"
