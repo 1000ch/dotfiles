@@ -54,5 +54,3 @@ set ruler
 set title
 set wildmenu
 set wrapscan
-
-filetype off
