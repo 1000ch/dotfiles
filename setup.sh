@@ -1,51 +1,28 @@
 # install homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-# install homebrew-bundle
 brew tap Homebrew/bundle
-# update & upgrade
 brew update
 brew upgrade
-# bundle using Brewfile
 brew bundle
 brew cleanup
-
-
 
 # set installed zsh & fish
 echo "/usr/local/bin/zsh" >> /etc/shells
 echo "/usr/local/bin/fish" >> /etc/shells
 chsh -s /usr/local/bin/zsh
 
-
-
 # set up zplug
 curl -fLo ~/.zplug/zplug --create-dirs https://git.io/zplug
 git clone https://github.com/milkbikis/powerline-shell ~/.powerline-shell
 cd ~/.powerline-shell/;./install.sh
 
-
-
-# install nodebrew
+# install nodebrew, rbenv & ruby-build, pyenv, plenv & perl-build
 curl -L git.io/nodebrew | perl - setup
-
-
-
-# install rbenv & ruby-build
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
-
-
-
-# install pyenv
 git clone https://github.com/yyuu/pyenv.git ~/.pyenv
-
-
-
-# install plenv & perl-build
 git clone https://github.com/tokuhirom/plenv.git ~/.plenv
 git clone https://github.com/tokuhirom/Perl-Build.git ~/.plenv/plugins/perl-build
-
-
 
 # symlinks
 if [ -f ~/.zshrc ]; then
