@@ -1,3 +1,7 @@
+for file in ~/.{exports,aliases,functions}; do
+  [ -r "$file" ] && source "$file"
+done
+
 function powerline_precmd() {
   PS1="$(~/.powerline-shell/powerline-shell.py $? --shell zsh 2> /dev/null)"
 }
@@ -9,31 +13,6 @@ function install_powerline_precmd() {
     fi
   done
   precmd_functions+=(powerline_precmd)
-}
-
-function update() {
-  # update zplug
-  zplug update
-  gem update
-
-  # update version managers
-  nodebrew selfupdate
-  pushd ~/.rbenv;git pull origin master;popd;
-  pushd ~/.rbenv/plugins/ruby-build;git pull origin master;popd;
-  pushd ~/.pyenv;git pull origin master;popd;
-  pushd ~/.plenv;git pull origin master;popd;
-  pushd ~/.plenv/plugins/perl-build;git pull origin master;popd;
-  brew update
-  brew upgrade
-  clear
-}
-
-function sublimetext() {
-  open -a Sublime\ Text $1
-}
-
-function tower() {
-  open -a Tower $1
 }
 
 if [ "$TERM" != "linux" ]; then

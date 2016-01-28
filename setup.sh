@@ -30,6 +30,9 @@ if [ -f ~/.zshrc ]; then
 fi
 ln -s ~/dotfiles/.zshrc ~/.zshrc
 ln -s ~/dotfiles/.zprofile ~/.zprofile
+ln -s ~/dotfiles/.exports ~/.exports
+ln -s ~/dotfiles/.aliases ~/.aliases
+ln -s ~/dotfiles/.functions ~/.functions
 ln -s ~/dotfiles/.gemrc ~/.gemrc
 ln -s ~/dotfiles/.vimrc ~/.vimrc
 ln -s ~/dotfiles/.gitconfig ~/.gitconfig
