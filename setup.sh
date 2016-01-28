@@ -1,10 +1,7 @@
 # install homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew tap Homebrew/bundle
-brew update
-brew upgrade
-brew bundle
-brew cleanup
+sh brew.sh
 
 # set installed zsh & fish
 echo "/usr/local/bin/zsh" >> /etc/shells
