@@ -21,6 +21,10 @@ function tower() {
   open -a Tower $1
 }
 
+function sketch() {
+  open -a Sketch $1
+}
+
 function gifify() {
   if [[ -n "$1" ]]; then
     if [[ $2 == '--good' ]]; then
