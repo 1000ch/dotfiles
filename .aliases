@@ -6,6 +6,7 @@ alias rm='rm -i -v'
 alias cp='cp -v'
 
 alias c='pygmentize -O style=monokai -f console256 -g'
+alias nr='npm run-script'
 alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias dig='dig +nocmd any +multiline +noall +answer'
 alias dsstore="find . -name '*.DS_Store' -type f -ls -delete"
