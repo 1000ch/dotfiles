@@ -13,8 +13,9 @@ curl -fLo ~/.zplug/zplug --create-dirs https://git.io/zplug
 git clone https://github.com/milkbikis/powerline-shell ~/.powerline-shell
 cd ~/.powerline-shell/;./install.sh
 
-# install nodebrew, rbenv & ruby-build, pyenv, plenv & perl-build
-curl -L git.io/nodebrew | perl - setup
+# install nodenv, rbenv & ruby-build, pyenv, plenv & perl-build
+git clone https://github.com/nodenv/nodenv.git ~/.nodenv
+git clone https://github.com/nodenv/node-build.git ~/.nodenv/plugins/node-build
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 git clone https://github.com/yyuu/pyenv.git ~/.pyenv

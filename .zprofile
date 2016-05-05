@@ -32,8 +32,9 @@ setopt print_eight_bit
 # set comment as #
 setopt interactive_comments
 
-# nodebrew, rbenv, pyenv
-export PATH=$HOME/.nodebrew/current/bin:$PATH
+# nodenv, rbenv, pyenv
+export PATH="$HOME/.nodenv/bin:$PATH"
+eval "$(nodenv init -)"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export PYENV_ROOT="$HOME/.pyenv"
