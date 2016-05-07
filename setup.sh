@@ -8,8 +8,8 @@ echo "/usr/local/bin/zsh" >> /etc/shells
 echo "/usr/local/bin/fish" >> /etc/shells
 chsh -s /usr/local/bin/zsh
 
-# set up zplug
-curl -fLo ~/.zplug/zplug --create-dirs https://git.io/zplug
+# set up antigen
+git clone https://github.com/zsh-users/antigen.git ~/.antigen
 git clone https://github.com/milkbikis/powerline-shell ~/.powerline-shell
 cd ~/.powerline-shell/;./install.sh
 

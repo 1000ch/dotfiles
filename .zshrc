@@ -1,20 +1,20 @@
-source ~/.zplug/init.zsh
+source ~/.antigen/antigen.zsh
 
-zplug "zsh-users/zsh-history-substring-search"
-zplug "zsh-users/zsh-completions"
-zplug "zsh-users/zsh-autosuggestions"
-zplug "zsh-users/zsh-syntax-highlighting"
+antigen-bundle zsh-users/zsh-history-substring-search
+antigen-bundle zsh-users/zsh-completions
+antigen-bundle zsh-users/zsh-autosuggestions
+antigen-bundle zsh-users/zsh-syntax-highlighting
 
-zplug "lib/bzr", from:oh-my-zsh
-zplug "lib/clipboard", from:oh-my-zsh
-zplug "lib/compfix", from:oh-my-zsh
-zplug "lib/completion", from:oh-my-zsh
-zplug "lib/correction", from:oh-my-zsh
-zplug "lib/diagnostics", from:oh-my-zsh
-zplug "lib/directories", from:oh-my-zsh
-zplug "lib/functions", from:oh-my-zsh
-zplug "lib/git", from:oh-my-zsh
-zplug "lib/history", from:oh-my-zsh
-zplug "lib/spectrum", from:oh-my-zsh
+antigen-use oh-my-zsh
+antigen-bundle --loc=lib/bzr.zsh
+antigen-bundle --loc=lib/clipboard.zsh
+antigen-bundle --loc=lib/compfix.zsh
+antigen-bundle --loc=lib/completion.zsh
+antigen-bundle --loc=lib/diagnostics.zsh
+antigen-bundle --loc=lib/directories.zsh
+antigen-bundle --loc=lib/functions.zsh
+antigen-bundle --loc=lib/git.zsh
+antigen-bundle --loc=lib/history.zsh
+antigen-bundle --loc=lib/spectrum.zsh
 
-zplug load --verbose
+antigen apply
