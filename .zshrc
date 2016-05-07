@@ -1,4 +1,4 @@
-source ~/.zplug/zplug
+source ~/.zplug/init.zsh
 
 zplug "zsh-users/zsh-history-substring-search"
 zplug "zsh-users/zsh-completions"
@@ -17,4 +17,4 @@ zplug "lib/git", from:oh-my-zsh
 zplug "lib/history", from:oh-my-zsh
 zplug "lib/spectrum", from:oh-my-zsh
 
-zplug load
+zplug load --verbose
