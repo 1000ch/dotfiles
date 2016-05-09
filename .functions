@@ -1,6 +1,8 @@
 function update() {
   antigen update
   gem update
+  brew update
+  brew upgrade
 
   # update version managers
   pushd ~/.nodenv;git pull origin master;popd;
@@ -11,6 +13,11 @@ function update() {
   pushd ~/.plenv;git pull origin master;popd;
   pushd ~/.plenv/plugins/perl-build;git pull origin master;popd;
   clear
+}
+
+function clean() {
+  gem cleanup
+  brew cleanup -s
 }
 
 function sublimetext() {
