@@ -36,6 +36,10 @@ function sketch() {
   open -a Sketch $1
 }
 
+function iawriter() {
+  open -a iA\ Writer $1
+}
+
 function gifify() {
   if [[ -n "$1" ]]; then
     if [[ $2 == '--good' ]]; then
