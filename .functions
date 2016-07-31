@@ -52,6 +52,10 @@ function iawriter() {
   open -a iA\ Writer $1
 }
 
+function caret() {
+  open -a Caret $1
+}
+
 function gifify() {
   if [[ -n "$1" ]]; then
     if [[ $2 == '--good' ]]; then
