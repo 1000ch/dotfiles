@@ -16,6 +16,7 @@ brew install hugo
 brew install highlight
 brew install imagemagick --with-webp
 brew install vim
+brew install wget
 brew install zopfli
 brew install zsh
 
