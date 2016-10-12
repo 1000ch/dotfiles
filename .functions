@@ -15,19 +15,6 @@ function update() {
   clear
 }
 
-function chromium() {
-  if [ -f "/tmp/chromium-mac.zip" ]; then
-    rm /tmp/chromium-mac.zip
-  fi
-
-  if [ -f "/tmp/chrome-mac.zip" ]; then
-    rm /tmp/chrome-mac.zip
-  fi
-
-  wget -O /tmp/chromuim-mac.zip https://download-chromium.appspot.com/dl/Mac?type=snapshots
-  pushd /tmp && unzip chromuim-mac.zip && mv /Applications/Chromium.app ~/.Trash && mv chrome-mac/Chromium.app /Applications/ && popd
-}
-
 function clean() {
   gem cleanup
   brew cleanup -s
