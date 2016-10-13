@@ -1,0 +1,26 @@
+set number
+set autoindent
+set smartindent
+set expandtab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=2
+syntax on
+set wildmenu
+set cursorline
+set hlsearch
+set ignorecase
+set smartcase
+set incsearch
+set backspace=indent,eol,start
+set showmatch
+
+autocmd FileType json setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType yaml setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType yml  setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType xml  setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType sh   setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType zsh  setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType css  setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType js   setlocal shiftwidth=2 tabstop=2 softtabstop=2
