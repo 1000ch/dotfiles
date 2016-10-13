@@ -1,27 +1,48 @@
-"skip initialization for vim-tiny or vim-small
-if 0 | endif
+let s:dein_dir = expand('~/.vim')
+let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 
-if has('vim_starting')
-  if &compatible
-    set nocompatible
+if &runtimepath !~# '/dein.vim' 
+  if !isdirectory(s:dein_repo_dir)
+    execute '!git clone https://github.com/Shougo/dein.vim' s:dein_repo_dir
   endif
-
-  set runtimepath+=~/.vim/bundle/neobundle.vim/
+  execute 'set runtimepath^=' . s:dein_repo_dir
 endif
 
-"NeoBundle
-call neobundle#begin(expand('~/.vim/bundle/'))
-NeoBundleFetch 'Shougo/neobundle.vim'
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'Shougo/neocomplete.vim'
-NeoBundle 'Shougo/neocomplcache.vim'
-call neobundle#end()
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+
+if &compatible
+  set nocompatible
+endif
+
+call dein#begin('~/.vim')
+
+call dein#add('Shougo/neocomplete.vim')
+call dein#add('scrooloose/nerdtree')
+call dein#add('jistr/vim-nerdtree-tabs')
+
+call dein#end()
+
+if dein#check_install()
+  call dein#install()
+endif
 
 filetype plugin indent on
-
-NeoBundleCheck
-
 syntax enable
+
+" NeoComplete
+let g:neocomplete#enable_at_startup = 1
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
+" NERDTree
+let NERDTreeShowHidden = 1
+
+" NERDTree tabs
+let g:nerdtree_tabs_open_on_console_startup = 1
+let g:nerdtree_tabs_focus_on_files = 1
 
 set autoread
 set encoding=utf-8
@@ -35,17 +56,17 @@ set showmatch
 set showmode
 set termencoding=utf-8
 
-"linenumber
+" linenumber
 set number
 
-"linebreak
+" linebreak
 set list
 
-"indent
+" indent
 set autoindent
 set smartindent
 
-"tab
+" tab
 set expandtab
 set tabstop=2
 set softtabstop=2
