@@ -13,6 +13,8 @@ call dein#begin('~/.vim')
 call dein#add('Shougo/neocomplete.vim')
 call dein#add('scrooloose/nerdtree')
 call dein#add('jistr/vim-nerdtree-tabs')
+call dein#add('scrooloose/syntastic')
+call dein#add('powerline/powerline', {'rtp': 'powerline/bindings/vim/'})
 
 call dein#end()
 
@@ -36,3 +38,16 @@ let NERDTreeShowHidden = 1
 " NERDTree tabs
 let g:nerdtree_tabs_open_on_console_startup = 1
 let g:nerdtree_tabs_focus_on_files = 1
+
+" syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" powerline
+set rtp+=~/.vim/repos/github.com/powerline/powerline/powerline/bindings/vim
