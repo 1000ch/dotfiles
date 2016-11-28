@@ -3,6 +3,7 @@
   email = shogo.sensui@gmail.com
 [core]
   deltaBaseCacheLimit = 1G
+  editor = vim
 [mergetool]
   keepBackup = true
 [filter "media"]
