@@ -16,5 +16,6 @@ antigen-bundle --loc=lib/functions.zsh
 antigen-bundle --loc=lib/git.zsh
 antigen-bundle --loc=lib/history.zsh
 antigen-bundle --loc=lib/spectrum.zsh
+antigen-bundle --loc=plugins/ssh-agent/ssh-agent.plugin.zsh
 
 antigen apply
