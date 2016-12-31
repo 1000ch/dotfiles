@@ -35,7 +35,7 @@ function pullall() {
   done
 }
 
-function sublimetext() {
+function sublime() {
   open -a Sublime\ Text $1
 }
 
