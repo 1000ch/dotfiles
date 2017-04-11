@@ -33,5 +33,9 @@ ln -s ~/dotfiles/.aliases ~/.aliases
 ln -s ~/dotfiles/.functions ~/.functions
 ln -s ~/dotfiles/.gemrc ~/.gemrc
 ln -s ~/dotfiles/.vimrc ~/.vimrc
+ln -s ~/dotfiles/.vimrc.basic ~/.vimrc.basic
+ln -s ~/dotfiles/.vimrc.editor ~/.vimrc.editor
+ln -s ~/dotfiles/.vimrc.encoding ~/.vimrc.encoding
+ln -s ~/dotfiles/.vimrc.plugins ~/.vimrc.plugins
 ln -s ~/dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/dotfiles/.editorconfig ~/.editorconfig
