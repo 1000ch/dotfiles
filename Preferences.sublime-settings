@@ -1,0 +1,26 @@
+{
+  "auto_indent": true,
+  "color_scheme": "Packages/User/SublimeLinter/base16-eighties.dark (SL).tmTheme",
+  "detect_indentation": true,
+  "draw_white_space": "all",
+  "enable_tab_scrolling": false,
+  "font_face": "Fira Mono",
+  "font_size": 16,
+  "highlight_line": true,
+  "ignored_packages":
+  [
+    "Vintage"
+  ],
+  "smart_indent": true,
+  "spacegray_fileicons": true,
+  "spacegray_sidebar_font_large": true,
+  "spacegray_sidebar_tree_large": true,
+  "spacegray_tabs_auto_width": true,
+  "spacegray_tabs_font_large": true,
+  "spacegray_tabs_large": true,
+  "tab_size": 2,
+  "theme": "Spacegray Eighties.sublime-theme",
+  "translate_tabs_to_spaces": true,
+  "use_tab_stops": true,
+  "word_wrap": true
+}
