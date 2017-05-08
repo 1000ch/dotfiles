@@ -19,6 +19,7 @@ brew install hugo
 brew install highlight
 brew install imagemagick --with-webp
 brew install jq
+brew install peco
 brew install rust
 brew install stoken
 brew install tmux
