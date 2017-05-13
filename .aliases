@@ -13,4 +13,5 @@ alias dsstore="find . -name '*.DS_Store' -type f -ls -delete"
 alias diskspace="df -P -kHl"
 
 alias repo='cd $(ghq list -p | peco)'
+alias github='gh-open $(ghq list -p | peco)'
 alias reload='exec -l $SHELL'
