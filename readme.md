@@ -5,9 +5,9 @@ $ git clone git@github.com:1000ch/dotfiles.git ~/dotfiles --recursive
 $ sh setup.sh
 ```
 
-- [homebrew](https://github.com/Homebrew/homebrew)
-    - [homebrew-bundle](https://github.com/Homebrew/homebrew-bundle)
-- [milkbikis/powerline-shell](https://github.com/milkbikis/powerline-shell)
+- [Homebrew/homebrew](https://github.com/Homebrew/homebrew)
+    - [caskroom/homebrew-cask](https://github.com/caskroom/homebrew-cask)
+- [banga/powerline-shell](https://github.com/banga/powerline-shell)
 - [zsh-users/antigen](https://github.com/zsh-users/antigen)
     - [zsh-users/zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search)
     - [zsh-users/zsh-completions](https://github.com/zsh-users/zsh-completions)
