@@ -1,4 +1,4 @@
-for file in ~/.{exports,aliases,functions,localconfig}; do
+for file in ~/.{exports,aliases,functions}; do
   [ -r "$file" ] && source "$file"
 done
 
@@ -32,15 +32,24 @@ setopt print_eight_bit
 # set comment as #
 setopt interactive_comments
 
-# nodenv, rbenv, pyenv
-export PATH="$HOME/.nodenv/bin:$PATH"
+# nodenv
+export NODENV_ROOT="$HOME/.nodenv"
+export PATH="$NODENV_ROOT/bin:$PATH"
 eval "$(nodenv init -)"
-export PATH="$HOME/.rbenv/bin:$PATH"
+
+# rbenv
+export RBENV_ROOT="$HOME/.rbenv"
+export PATH="$RBENV_ROOT/bin:$PATH"
 eval "$(rbenv init -)"
+
+# pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
-export PATH="$HOME/.plenv/bin:$PATH"
+
+# plenv
+export PLENV_ROOT="$HOME/.plenv"
+export PATH="$PLENV_ROOT/bin:$PATH"
 eval "$(plenv init -)"
 
 # gopath
