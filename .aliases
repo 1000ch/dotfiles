@@ -1,6 +1,4 @@
 alias g='git'
-alias v='vim'
-
 alias mv='mv -v'
 alias rm='rm -i -v'
 alias cp='cp -v'
@@ -12,6 +10,7 @@ alias dig='dig +nocmd any +multiline +noall +answer'
 alias dsstore="find . -name '*.DS_Store' -type f -ls -delete"
 alias diskspace="df -P -kHl"
 
-alias repo='cd $(ghq list -p | peco)'
-alias github='gh-open $(ghq list -p | peco)'
+alias repos='ghq list -p | peco'
+alias repo='cd $(repos)'
+alias github='gh-open $(repos)'
 alias reload='exec -l $SHELL'

@@ -23,20 +23,24 @@ function clean() {
   brew cleanup -s
 }
 
-function sublime() {
-  open -a Sublime\ Text $1
+function get_target_repo() {
+  if [ $# -eq 1 ]; then
+    echo $1
+  else
+    echo $(repos)
+  fi
 }
 
 function tower() {
-  open -a Tower $1
+  open -a Tower $(get_target_repo $1)
 }
 
-function sketch() {
-  open -a Sketch $1
+function sublime() {
+  open -a Sublime\ Text $(get_target_repo $1)
 }
 
 function vscode() {
-  open -a Visual\ Studio\ Code $1
+  open -a Visual\ Studio\ Code $(get_target_repo $1)
 }
 
 function compare() {
