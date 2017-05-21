@@ -22,16 +22,16 @@ git clone https://github.com/tokuhirom/plenv.git ~/.plenv
 git clone https://github.com/tokuhirom/Perl-Build.git ~/.plenv/plugins/perl-build
 
 # symlinks
-ln -sf ~/dotfiles/.zshrc ~/.zshrc
-ln -sf ~/dotfiles/.zprofile ~/.zprofile
-ln -sf ~/dotfiles/.exports ~/.exports
-ln -sf ~/dotfiles/.aliases ~/.aliases
-ln -sf ~/dotfiles/.functions ~/.functions
-ln -sf ~/dotfiles/.gemrc ~/.gemrc
-ln -sf ~/dotfiles/.vimrc ~/.vimrc
-ln -sf ~/dotfiles/.vimrc.basic ~/.vimrc.basic
-ln -sf ~/dotfiles/.vimrc.editor ~/.vimrc.editor
-ln -sf ~/dotfiles/.vimrc.encoding ~/.vimrc.encoding
-ln -sf ~/dotfiles/.vimrc.plugins ~/.vimrc.plugins
-ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
-ln -sf ~/dotfiles/.editorconfig ~/.editorconfig
+ln -sf ~/workspace/dotfiles/.zshrc ~/.zshrc
+ln -sf ~/workspace/dotfiles/.zprofile ~/.zprofile
+ln -sf ~/workspace/dotfiles/.exports ~/.exports
+ln -sf ~/workspace/dotfiles/.aliases ~/.aliases
+ln -sf ~/workspace/dotfiles/.functions ~/.functions
+ln -sf ~/workspace/dotfiles/.gemrc ~/.gemrc
+ln -sf ~/workspace/dotfiles/.vimrc ~/.vimrc
+ln -sf ~/workspace/dotfiles/.vimrc.basic ~/.vimrc.basic
+ln -sf ~/workspace/dotfiles/.vimrc.editor ~/.vimrc.editor
+ln -sf ~/workspace/dotfiles/.vimrc.encoding ~/.vimrc.encoding
+ln -sf ~/workspace/dotfiles/.vimrc.plugins ~/.vimrc.plugins
+ln -sf ~/workspace/dotfiles/.gitconfig ~/.gitconfig
+ln -sf ~/workspace/dotfiles/.editorconfig ~/.editorconfig
