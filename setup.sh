@@ -35,3 +35,4 @@ ln -sf ~/workspace/dotfiles/.vimrc.encoding ~/.vimrc.encoding
 ln -sf ~/workspace/dotfiles/.vimrc.plugins ~/.vimrc.plugins
 ln -sf ~/workspace/dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/workspace/dotfiles/.editorconfig ~/.editorconfig
+ln -sf ~/workspace/dotfiles/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
