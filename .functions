@@ -21,6 +21,7 @@ function update() {
 function clean() {
   gem cleanup
   brew cleanup -s
+  antigen cleanup
 }
 
 function get_target_repo() {
