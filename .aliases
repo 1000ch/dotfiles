@@ -1,4 +1,5 @@
 alias g='git'
+alias l='ls -lFh'
 alias mv='mv -v'
 alias rm='rm -i -v'
 alias cp='cp -v'
