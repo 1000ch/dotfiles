@@ -44,6 +44,10 @@ function vscode() {
   open -a Visual\ Studio\ Code $(get_target_repo $1)
 }
 
+function atom() {
+  open -a Atom $(get_target_repo $1)
+}
+
 function compare() {
   echo "original size (bytes): $(cat "$1" | wc -c)"
   echo "    gzip size (bytes): $(gzip -c "$1" | wc -c)"
