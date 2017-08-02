@@ -15,6 +15,7 @@ cd ~/.powerline-shell;./install.sh
 # install nodenv, rbenv & ruby-build, pyenv, plenv & perl-build
 git clone https://github.com/nodenv/nodenv.git ~/.nodenv
 git clone https://github.com/nodenv/node-build.git ~/.nodenv/plugins/node-build
+git clone https://github.com/nodenv/nodenv-package-rehash.git ~/.nodenv/plugins/nodenv-package-rehash
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
