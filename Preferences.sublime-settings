@@ -1,6 +1,6 @@
 {
 	"auto_indent": true,
-	"color_scheme": "Packages/User/SublimeLinter/One Dark (SL).tmTheme",
+	"color_scheme": "Packages/Theme - One Dark/One Dark.tmTheme",
 	"detect_indentation": true,
 	"draw_white_space": "all",
 	"enable_tab_scrolling": false,
