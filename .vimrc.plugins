@@ -16,7 +16,6 @@ call dein#add('jistr/vim-nerdtree-tabs')
 call dein#add('vim-syntastic/syntastic')
 call dein#add('mtscout6/syntastic-local-eslint.vim')
 call dein#add('1000ch/syntastic-local-stylelint.vim')
-call dein#add('powerline/powerline')
 
 call dein#end()
 
