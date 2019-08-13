@@ -10,7 +10,7 @@ alias dig='dig +nocmd any +multiline +noall +answer'
 alias dsstore="find . -name '*.DS_Store' -type f -ls -delete"
 alias diskspace="df -P -kHl"
 
-alias repos='ghq list -p | peco'
+alias repos='ghq list -p | fzf'
 alias repo='cd $(repos)'
 alias github='gh-open $(repos)'
 alias reload='exec -l $SHELL'
