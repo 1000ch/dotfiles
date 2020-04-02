@@ -55,6 +55,3 @@ eval "$(plenv init -)"
 # gopath
 export GOPATH="$HOME/.go"
 export PATH=$PATH:$GOPATH/bin
-
-# direnv
-eval "$(direnv hook zsh)"
