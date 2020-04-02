@@ -1,6 +1,6 @@
 [user]
   name = 1000ch
-  email = shogo.sensui@gmail.com
+  email = shogosensui@gmail.com
 [core]
   deltaBaseCacheLimit = 1G
   editor = vim
