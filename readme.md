@@ -17,6 +17,6 @@ $ sh setup.sh
     - [nodenv/node-build](https://github.com/nodenv/node-build)
 - [rbenv/rbenv](https://github.com/rbenv/rbenv)
     - [rbenv/ruby-build](https://github.com/rbenv/ruby-build)
-- [yyuu/pyenv](https://github.com/yyuu/pyenv)
+- [pyenv/pyenv](https://github.com/pyenv/pyenv)
 - [tokuhirom/plenv](https://github.com/tokuhirom/plenv)
     - [tokuhirom/Perl-Build](https://github.com/tokuhirom/Perl-Build)
