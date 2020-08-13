@@ -7,6 +7,8 @@ function update() {
   brew update
   brew upgrade
 
+  nodenv update-version-defs
+
   # update version managers
   pushd ~/.nodenv;git pull origin master;popd;
   pushd ~/.nodenv/plugins/node-build;git pull origin master;popd;
