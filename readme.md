@@ -18,5 +18,3 @@ $ sh setup.sh
 - [rbenv/rbenv](https://github.com/rbenv/rbenv)
     - [rbenv/ruby-build](https://github.com/rbenv/ruby-build)
 - [pyenv/pyenv](https://github.com/pyenv/pyenv)
-- [tokuhirom/plenv](https://github.com/tokuhirom/plenv)
-    - [tokuhirom/Perl-Build](https://github.com/tokuhirom/Perl-Build)

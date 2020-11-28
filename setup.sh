@@ -12,7 +12,7 @@ git clone https://github.com/zsh-users/antigen.git ~/.antigen
 git clone https://github.com/banga/powerline-shell.git ~/.powerline-shell
 cd ~/.powerline-shell;./install.sh
 
-# install nodenv, rbenv & ruby-build, pyenv, plenv & perl-build
+# install nodenv, rbenv & ruby-build, pyenv
 git clone https://github.com/nodenv/nodenv.git ~/.nodenv
 git clone https://github.com/nodenv/node-build.git ~/.nodenv/plugins/node-build
 git clone https://github.com/nodenv/nodenv-package-rehash.git ~/.nodenv/plugins/nodenv-package-rehash
@@ -20,5 +20,3 @@ git clone https://github.com/nodenv/node-build-update-defs.git ~/.nodenv/plugins
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-git clone https://github.com/tokuhirom/plenv.git ~/.plenv
-git clone https://github.com/tokuhirom/Perl-Build.git ~/.plenv/plugins/perl-build
