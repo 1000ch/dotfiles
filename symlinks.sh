@@ -12,4 +12,3 @@ ln -sf ~/workspace/github.com/1000ch/dotfiles/.vimrc.encoding ~/.vimrc.encoding
 ln -sf ~/workspace/github.com/1000ch/dotfiles/.vimrc.plugins ~/.vimrc.plugins
 ln -sf ~/workspace/github.com/1000ch/dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/workspace/github.com/1000ch/dotfiles/.editorconfig ~/.editorconfig
-ln -sf ~/workspace/github.com/1000ch/dotfiles/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
