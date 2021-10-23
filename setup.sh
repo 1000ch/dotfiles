@@ -9,8 +9,6 @@ chsh -s /usr/local/bin/zsh
 
 # set up antigen
 git clone https://github.com/zsh-users/antigen.git ~/.antigen
-git clone https://github.com/banga/powerline-shell.git ~/.powerline-shell
-cd ~/.powerline-shell;./install.sh
 
 # install nodenv, rbenv & ruby-build, pyenv
 git clone https://github.com/nodenv/nodenv.git ~/.nodenv
