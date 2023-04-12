@@ -32,6 +32,9 @@ setopt print_eight_bit
 # set comment as #
 setopt interactive_comments
 
+# Homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # nodenv
 export NODENV_ROOT="$HOME/.nodenv"
 export PATH="$NODENV_ROOT/bin:$PATH"
