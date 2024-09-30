@@ -1,7 +1,3 @@
-# install homebrew
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-sh brew.sh
-
 # set installed zsh & fish
 echo "/usr/local/bin/zsh" >> /etc/shells
 echo "/usr/local/bin/fish" >> /etc/shells
