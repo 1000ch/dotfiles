@@ -1,8 +1,3 @@
-# set installed zsh & fish
-echo "/usr/local/bin/zsh" >> /etc/shells
-echo "/usr/local/bin/fish" >> /etc/shells
-chsh -s /usr/local/bin/zsh
-
 # set up antigen
 git clone https://github.com/zsh-users/antigen.git ~/.antigen
 
