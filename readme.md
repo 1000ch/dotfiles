@@ -1,20 +1,8 @@
 # dotfiles
 
-```bash
-$ git clone git@github.com:1000ch/dotfiles.git ~/dotfiles --recursive
-$ sh setup.sh
-```
-
-- [Homebrew/homebrew](https://github.com/Homebrew/homebrew)
-    - [caskroom/homebrew-cask](https://github.com/caskroom/homebrew-cask)
-- [banga/powerline-shell](https://github.com/banga/powerline-shell)
-- [zsh-users/antigen](https://github.com/zsh-users/antigen)
-    - [zsh-users/zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search)
-    - [zsh-users/zsh-completions](https://github.com/zsh-users/zsh-completions)
-    - [zsh-users/zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
-    - [zsh-users/zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
-- [nodenv/nodenv](https://github.com/nodenv/nodenv)
-    - [nodenv/node-build](https://github.com/nodenv/node-build)
-- [rbenv/rbenv](https://github.com/rbenv/rbenv)
-    - [rbenv/ruby-build](https://github.com/rbenv/ruby-build)
-- [pyenv/pyenv](https://github.com/pyenv/pyenv)
+1. Install [iTerm2](https://iterm2.com/) and import [material design theme](https://github.com/MartinSeeler/iterm2-material-design) for it
+2. Download some [patched fonts for powerline](https://github.com/powerline/fonts) and add them to [Font Book](https://support.apple.com/ja-jp/guide/font-book/welcome/mac)
+3. Clone this repository and execute `setup.sh` and `symlinks.sh`
+4. Set up Python 3.x.x via `pyenv install 3.x.x` and `pyenv global 3.x.x`
+5. Install `powerline-shell` via `pip` of installed Python
+6. You will install [Homwbrew](https://brew.sh/) and execute `brew.sh` of cloned repository
