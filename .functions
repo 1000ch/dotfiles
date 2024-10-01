@@ -10,7 +10,7 @@ function update() {
   nodenv update-version-defs
 
   # update version managers
-  pushd ~/.nodenv;git pull origin master;popd;
+  pushd ~/.nodenv;git pull origin main;popd;
   pushd ~/.nodenv/plugins/node-build;git pull origin master;popd;
   pushd ~/.rbenv;git pull origin master;popd;
   pushd ~/.rbenv/plugins/ruby-build;git pull origin master;popd;
