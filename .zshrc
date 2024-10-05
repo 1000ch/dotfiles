@@ -3,6 +3,8 @@ source ~/.antigen/antigen.zsh
 antigen use oh-my-zsh
 
 ZSH_PLUGINS=(
+  "command-not-found"
+  "zsh-interactive-cd"
   "zsh-users/zsh-history-substring-search"
   "zsh-users/zsh-completions"
   "zsh-users/zsh-autosuggestions"
