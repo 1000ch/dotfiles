@@ -4,7 +4,6 @@ alias mv='mv -v'
 alias rm='rm -i -v'
 alias cp='cp -v'
 
-alias c='pygmentize -O style=monokai -f console256 -g'
 alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias dig='dig +nocmd any +multiline +noall +answer'
 alias dsstore="find . -name '*.DS_Store' -type f -ls -delete"
@@ -16,5 +15,3 @@ alias github='gh-open $(repos)'
 alias reload='exec -l $SHELL'
 alias fork='open -a Fork $1'
 alias vscode='open -a Visual\ Studio\ Code $1'
-alias lg='lazygit'
-alias k='kubectl'
