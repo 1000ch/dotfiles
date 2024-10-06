@@ -7,8 +7,6 @@ DOTFILES=(
   ".functions"
   ".gemrc"
   ".vimrc"
-  ".vimrc.editor"
-  ".vimrc.plugins"
   ".gitconfig"
   ".editorconfig"
 )
