@@ -1,4 +1,4 @@
-for file in ~/.{exports,aliases,functions}; do
+for file in ~/.{aliases,functions}; do
   [ -r "$file" ] && source "$file"
 done
 

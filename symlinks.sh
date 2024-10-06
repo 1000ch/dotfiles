@@ -3,7 +3,6 @@ REPO="$(cd $(dirname $0); pwd)"
 DOTFILES=(
   ".zshrc"
   ".zprofile"
-  ".exports"
   ".aliases"
   ".functions"
   ".gemrc"
