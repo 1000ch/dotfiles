@@ -6,3 +6,4 @@
 4. Set up Python 3.x.x via `pyenv install 3.x.x` and `pyenv global 3.x.x`
 5. Install `powerline-shell` via `pip` of installed Python
 6. You will install [Homwbrew](https://brew.sh/) and execute `brew.sh` of cloned repository
+7. Execute `mkdir $GOPATH` to create a directory and `go install github.com/1000ch/gh-open`

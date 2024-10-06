@@ -3,6 +3,7 @@ brew upgrade
 
 brew install ag
 brew install git
+brew install go
 brew install hugo
 brew install fzf
 brew install vim
