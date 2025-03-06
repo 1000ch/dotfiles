@@ -53,3 +53,6 @@ eval "$(pyenv init -)"
 # gopath
 export GOPATH="$HOME/.go"
 export PATH=$PATH:$GOPATH/bin
+
+# GPG
+export GPG_TTY=$TTY
