@@ -2,8 +2,41 @@
   name = 1000ch
   email = shogosensui@gmail.com
 [core]
+  excludesfile = ~/.gitignore
   deltaBaseCacheLimit = 1G
   editor = vim
+[commit]
+  verbose = true
+[column]
+  ui = auto
+[branch]
+  sort = -committerdate
+[tag]
+  sort = version:refname
+[init]
+  defaultBranch = main
+[diff]
+  algorithm = histogram
+  colorMoved = plain
+  mnemonicPrefix = true
+  renames = true
+[push]
+  default = simple
+  autoSetupRemote = true
+  followTags = true
+[fetch]
+  prune = true
+  pruneTags = true
+  all = true
+[help]
+  autocorrect = prompt
+[rerere]
+  enabled = true
+  autoupdate = true
+[rebase]
+  autoSquash = true
+  autoStash = true
+  updateRefs = true
 [mergetool]
   keepBackup = true
 [filter "media"]
@@ -35,8 +68,9 @@
   changed = green
   untracked = cyan
 [filter "lfs"]
-  smudge = git-lfs smudge -- %f
   required = true
+  smudge = git-lfs smudge -- %f
   clean = git-lfs clean -- %f
+  process = git-lfs filter-process
 [ghq]
   root = ~/workspace
