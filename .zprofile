@@ -43,6 +43,7 @@ eval "$(nodenv init -)"
 # rbenv
 export RBENV_ROOT="$HOME/.rbenv"
 export PATH="$RBENV_ROOT/bin:$PATH"
+export FPATH=~/.rbenv/completions:"$FPATH"
 eval "$(rbenv init -)"
 
 # pyenv
@@ -56,3 +57,11 @@ export PATH=$PATH:$GOPATH/bin
 
 # GPG
 export GPG_TTY=$TTY
+
+# Bun
+[ -s ~/.bun/_bun ] && source ~/.bun/_bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+autoload -U compinit
+compinit
