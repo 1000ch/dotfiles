@@ -1,23 +1,6 @@
-for file in ~/.{aliases,functions}; do
+for file in ~/.{aliases,functions,variables}; do
   [ -r "$file" ] && source "$file"
 done
-
-function powerline_precmd() {
-  PS1=$(powerline-shell --shell zsh $?)
-}
-
-function install_powerline_precmd() {
-  for s in ${precmd_functions[@]}; do
-    if [ "$s" = "powerline_precmd" ]; then
-      return
-    fi
-  done
-  precmd_functions+=(powerline_precmd)
-}
-
-if [ "$TERM" != "linux" ]; then
-  install_powerline_precmd
-fi
 
 if [ -n "$LS_COLORS" ]; then
   zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
@@ -57,11 +40,6 @@ export PATH=$PATH:$GOPATH/bin
 
 # GPG
 export GPG_TTY=$TTY
-
-# Bun
-[ -s ~/.bun/_bun ] && source ~/.bun/_bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
 
 autoload -U compinit
 compinit

@@ -1,6 +1,6 @@
 source ~/.antigen/antigen.zsh
 
-antigen use oh-my-zsh
+eval "$(starship init zsh)"
 
 ZSH_PLUGINS=(
   "command-not-found"
