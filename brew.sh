@@ -2,14 +2,17 @@ brew update
 brew upgrade
 
 brew install ag
+brew install oven-sh/bun/bun
+brew install fzf
 brew install git
 brew install go
 brew install hugo
-brew install fzf
+brew install starship
 brew install vim
 
 brew install --cask 1password
 brew install --cask alfred
+brew install --cask alt-tab
 brew install --cask appcleaner
 brew install --cask contexts
 brew install --cask discord
