@@ -1,3 +1,4 @@
+#!/bin/sh
 alias g='git'
 alias l='ls -lFh'
 alias mv='mv -v'
@@ -7,11 +8,14 @@ alias cp='cp -v'
 alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias dig='dig +nocmd any +multiline +noall +answer'
 alias dsstore="find . -name '*.DS_Store' -type f -ls -delete"
-alias diskspace="df -P -kHl"
+alias diskspace='df -P -kHl'
 
 alias repos='ghq list -p | fzf'
 alias repo='cd $(repos)'
 alias repo-open='gh-open $(repos)'
 alias vscode='code $(repos)'
 alias reload='exec -l $SHELL'
-alias fork='open $1 -a Fork'
+
+fork() {
+  open "$1" -a Fork
+}

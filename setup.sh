@@ -1,4 +1,4 @@
-# install nodenv, rbenv & ruby-build, pyenv
+#!/bin/sh
 git clone https://github.com/nodenv/nodenv.git ~/.nodenv
 git clone https://github.com/nodenv/node-build.git ~/.nodenv/plugins/node-build
 git clone https://github.com/nodenv/nodenv-package-rehash.git ~/.nodenv/plugins/nodenv-package-rehash

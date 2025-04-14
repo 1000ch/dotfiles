@@ -1,4 +1,5 @@
-function update() {
+#!/bin/sh
+update() {
   antigen update
   gem update
   brew update
@@ -15,13 +16,13 @@ function update() {
   clear
 }
 
-function clean() {
+clean() {
   gem cleanup
   brew cleanup -s
   antigen cleanup
 }
 
-function compare() {
+compare() {
   echo "original size (bytes): $(cat "$1" | wc -c)"
   echo "    gzip size (bytes): $(gzip -c "$1" | wc -c)"
   echo "  zopfli size (bytes): $(zopfli -c "$1" | wc -c)"

@@ -1,4 +1,4 @@
-# symlinks
+#!/bin/sh
 REPO="$(cd $(dirname $0); pwd)"
 DOTFILES=(
   ".zshrc"
@@ -11,10 +11,11 @@ DOTFILES=(
   ".editorconfig"
 )
 
-for dotfile in ${DOTFILES[@]} ; do
-  if [ -L ${REPO}/${dotfile} ]; then
-    rm -f ${REPO}/${dotfile}
+for dotfile in "${DOTFILES[@]}" ; do
+  if [ -L "$HOME/$dotfile" ]; then
+    echo "A symlink exists, removing $HOME/$dotfile"
+    rm -f "$HOME/$dotfile"
   fi
 
-  ln -sf ${REPO}/${dotfile} ~/${dotfile}
+  ln -sf "$REPO/$dotfile" "$HOME/$dotfile"
 done
