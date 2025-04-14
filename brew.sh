@@ -1,29 +1,50 @@
+#!/bin/sh
 brew update
 brew upgrade
 
-brew install ag
-brew install antigen
-brew install oven-sh/bun/bun
-brew install fzf
-brew install git
-brew install go
-brew install hugo
-brew install starship
-brew install vim
+BREW_LIBS=(
+  "ag"
+  "antigen"
+  "oven-sh/bun/bun"
+  "fzf"
+  "git"
+  "go"
+  "hugo"
+  "starship"
+  "vim"
+)
 
-brew install --cask 1password
-brew install --cask alfred
-brew install --cask alt-tab
-brew install --cask appcleaner
-brew install --cask contexts
-brew install --cask discord
-brew install --cask dropbox
-brew install --cask fork
-brew install --cask google-japanese-ime
-brew install --cask imageoptim
-brew install --cask popclip
-brew install --cask rectangle
-brew install --cask slack
-brew install --cask visual-studio-code
+BREW_APPS=(
+  "1password"
+  "alfred"
+  "alt-tab"
+  "appcleaner"
+  "contexts"
+  "discord"
+  "dropbox"
+  "fork"
+  "google-japanese-ime"
+  "imageoptim"
+  "popclip"
+  "rectangle"
+  "slack"
+  "visual-studio-code"
+)
+
+for brew_lib in "${BREW_LIBS[@]}" ; do
+  if brew info "$brew_lib" | grep -q "Not installed"; then
+    brew install "$brew_lib"
+  else
+    echo "$brew_lib is already installed"
+  fi
+done
+
+for brew_app in "${BREW_APPS[@]}" ; do
+  if brew info "$brew_app" | grep -q "Not installed"; then
+    brew install "$brew_app"
+  else
+    echo "$brew_app is already installed"
+  fi
+done
 
 brew cleanup
