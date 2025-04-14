@@ -1,7 +1,4 @@
 function update() {
-  # update antigen
-  pushd ~/.antigen;git pull origin master;popd;
-
   antigen update
   gem update
   brew update

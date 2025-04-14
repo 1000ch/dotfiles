@@ -1,6 +1,3 @@
-# set up antigen
-git clone https://github.com/zsh-users/antigen.git ~/.antigen
-
 # install nodenv, rbenv & ruby-build, pyenv
 git clone https://github.com/nodenv/nodenv.git ~/.nodenv
 git clone https://github.com/nodenv/node-build.git ~/.nodenv/plugins/node-build

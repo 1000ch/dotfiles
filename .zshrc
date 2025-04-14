@@ -1,4 +1,4 @@
-source ~/.antigen/antigen.zsh
+source $(brew --prefix)/share/antigen/antigen.zsh
 
 eval "$(starship init zsh)"
 

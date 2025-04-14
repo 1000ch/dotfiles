@@ -2,6 +2,7 @@ brew update
 brew upgrade
 
 brew install ag
+brew install antigen
 brew install oven-sh/bun/bun
 brew install fzf
 brew install git
