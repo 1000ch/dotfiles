@@ -10,6 +10,13 @@ BREW_LIBS=(
   "git"
   "go"
   "hugo"
+  "nodenv"
+  "nodenv/nodenv/nodenv-package-rehash"
+  "nodenv/nodenv/node-build-update-defs"
+  "node-build"
+  "pyenv"
+  "rbenv"
+  "ruby-build"
   "starship"
   "vim"
 )
