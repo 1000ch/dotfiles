@@ -30,6 +30,7 @@ BREW_APPS=(
   "discord"
   "dropbox"
   "fork"
+  "ghostty"
   "google-japanese-ime"
   "imageoptim"
   "popclip"
@@ -48,7 +49,7 @@ done
 
 for brew_app in "${BREW_APPS[@]}" ; do
   if brew info "$brew_app" | grep -q "Not installed"; then
-    brew install "$brew_app"
+    brew install --cask "$brew_app"
   else
     echo "$brew_app is already installed"
   fi

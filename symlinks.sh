@@ -9,7 +9,10 @@ DOTFILES=(
   ".vimrc"
   ".gitconfig"
   ".editorconfig"
+  ".config/ghostty/config"
 )
+
+mkdir -p "$HOME/.config/ghostty"
 
 for dotfile in "${DOTFILES[@]}" ; do
   if [ -L "$HOME/$dotfile" ]; then

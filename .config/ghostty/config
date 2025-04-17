@@ -1,0 +1,8 @@
+theme = MaterialDesignColors
+font-family = Roboto Mono
+font-feature = -dlig
+font-size = 16
+macos-titlebar-style = hidden
+macos-titlebar-proxy-icon = hidden
+cursor-style = bar
+cursor-style-blink = false
