@@ -29,18 +29,16 @@ BREW_LIBS=(
 
 BREW_APPS=(
   "1password"
-  "alfred"
   "alt-tab"
   "appcleaner"
   "contexts"
   "discord"
-  "dropbox"
   "fork"
   "ghostty"
   "google-japanese-ime"
   "imageoptim"
   "popclip"
-  "rectangle"
+  "raycast"
   "slack"
   "visual-studio-code"
 )
