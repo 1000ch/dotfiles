@@ -1,8 +1,7 @@
 #!/bin/sh
 REPO="$(cd $(dirname $0); pwd)"
 DOTFILES=(
-  ".zshrc"
-  ".zprofile"
+  ".zshenv"
   ".aliases"
   ".functions"
   ".gemrc"
@@ -16,7 +15,7 @@ mkdir -p "$HOME/.config/ghostty"
 
 for dotfile in "${DOTFILES[@]}" ; do
   if [ -L "$HOME/$dotfile" ]; then
-    echo "A symlink exists, removing $HOME/$dotfile"
+    echo "Removing $HOME/$dotfile to recreate a symlink"
     rm -f "$HOME/$dotfile"
   fi
 
