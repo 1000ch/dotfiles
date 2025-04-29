@@ -1,8 +1,19 @@
 #!/bin/sh
-alias g='git'
-alias l='ls -lFh --color'
+
+# -a      Include directory entries whose names begin with a dot (‘.’).
+# -l      (The lowercase letter “ell”.) List files in the long format, as described in the The Long Format subsection below.
+# -h      When used with the -l option, use unit suffixes: Byte, Kilobyte, Megabyte, Gigabyte, Terabyte and Petabyte in order to reduce the number of digits to four or fewer using base 2 for sizes.  This option is not defined in IEEE Std 1003.1-2008 (“POSIX.1”).
+# -F      Display a slash (‘/’) immediately after each pathname that is a directory, an asterisk (‘*’) after each that is executable, an at sign (‘@’) after each symbolic link, an equals sign (‘=’) after each socket, a percent sign (‘%’) after each whiteout, and a vertical bar (‘|’) after each that is a FIFO.
+alias ls='ls -alhF --color'
+
+# -v      Cause mv to be verbose, showing files after they are moved.
 alias mv='mv -v'
+
+# -i      Request confirmation before attempting to remove each file, regardless of the file's permissions, or whether or not the standard input device is a terminal.  The -i option overrides any previous -f options.
+# -v      Be verbose when deleting files, showing them as they are removed.
 alias rm='rm -i -v'
+
+# -v    Cause cp to be verbose, showing files as they are copied.
 alias cp='cp -v'
 
 alias ip='dig +short myip.opendns.com @resolver1.opendns.com'

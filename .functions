@@ -3,12 +3,15 @@ update() {
   brew update
   brew upgrade
   antigen update
-  clear
 }
 
-clean() {
+cleanup() {
   brew cleanup -s
   antigen cleanup
+}
+
+trash() {
+  mv "$1" "$HOME/.Trash/"
 }
 
 compare() {
