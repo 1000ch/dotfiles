@@ -26,9 +26,6 @@ setopt no_beep # omit beep sound
 # lang
 export LANG=ja_JP.UTF-8
 
-# Homebrew
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
 # nodenv
 export NODENV_ROOT="$HOME/.nodenv"
 export PATH="$NODENV_ROOT/bin:$PATH"
