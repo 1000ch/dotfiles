@@ -1,6 +1,6 @@
 #!/bin/sh
 alias g='git'
-alias l='ls -lFh'
+alias l='ls -lFh --color'
 alias mv='mv -v'
 alias rm='rm -i -v'
 alias cp='cp -v'
