@@ -1,4 +1,5 @@
-.zsh/.zsh_history
-.zsh/.zcompdump
-.zsh/.zshrc.zwc
+**/.zsh_history
+**/.zcompdump
+**/.zshrc.zwc
+.antigen
 .DS_Store
