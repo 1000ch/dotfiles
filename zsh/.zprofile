@@ -1,16 +1,5 @@
-# enable auto completion
-autoload -Uz compinit && compinit
-
-# enable colors
-autoload -Uz colors && colors
-
-# export LS_COLORS
-eval $(gdircolors)
-
-# apply LS_COLORS styles if defined
-if [ -n "$LS_COLORS" ]; then
-  zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
-fi
+# Enable Homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 setopt auto_cd # omit cd to change directory
 setopt auto_list # show completion list
@@ -34,7 +23,7 @@ eval "$(nodenv init -)"
 # rbenv
 export RBENV_ROOT="$HOME/.rbenv"
 export PATH="$RBENV_ROOT/bin:$PATH"
-export FPATH=~/.rbenv/completions:"$FPATH"
+export FPATH="$HOME/.rbenv/completions:$FPATH"
 eval "$(rbenv init -)"
 
 # pyenv
@@ -44,14 +33,7 @@ eval "$(pyenv init -)"
 
 # gopath
 export GOPATH="$HOME/.go"
-export PATH=$PATH:$GOPATH/bin
+export PATH="$GOPATH/bin:$PATH"
 
 # GPG
 export GPG_TTY=$TTY
-
-# load dot files if exists
-for file in $HOME/.{extensions,variables}; do
-  if [ -r "$file" ]; then
-    source "$file"
-  fi
-done

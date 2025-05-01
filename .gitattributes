@@ -1,4 +1,0 @@
-*.mp3 filter=lfs -crlf
-*.zip filter=lfs -crlf
-*.psd filter=lfs -crlf
-*.sketch filter=lfs -crlf
