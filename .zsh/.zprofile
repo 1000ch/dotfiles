@@ -50,7 +50,7 @@ export PATH=$PATH:$GOPATH/bin
 export GPG_TTY=$TTY
 
 # load dot files if exists
-for file in $HOME/.{aliases,functions,variables}; do
+for file in $HOME/.{extensions,variables}; do
   if [ -r "$file" ]; then
     source "$file"
   fi

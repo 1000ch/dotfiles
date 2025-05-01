@@ -2,8 +2,7 @@
 REPO="$(cd $(dirname $0); pwd)"
 DOTFILES=(
   ".zshenv"
-  ".aliases"
-  ".functions"
+  ".extensions"
   ".gemrc"
   ".vimrc"
   ".gitconfig"
