@@ -42,6 +42,18 @@ cleanup() {
   antigen cleanup
 }
 
+cleanup_zsh() {
+  ZSH_TMPS=(
+    '.zcompdump'
+    '.zsh_history'
+    '.zshrc.zwc'
+  )
+
+  for zsh_tmp in "${ZSH_TMPS[@]}"; do
+    find "$ZDOTDIR" -name "$zsh_tmp" -type f -ls -delete
+  done
+}
+
 trash() {
   mv "$1" "$HOME/.Trash/"
 }
