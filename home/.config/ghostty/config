@@ -1,8 +1,30 @@
-theme = MaterialDesignColors
-font-family = Roboto Mono
-font-feature = -dlig
-font-size = 16
-macos-titlebar-style = hidden
-macos-titlebar-proxy-icon = hidden
+# https://ghostty.org/docs/config/reference#confirm-close-surface
+confirm-close-surface = false
+
+# https://ghostty.org/docs/config/reference#cursor-style
 cursor-style = bar
+
+# https://ghostty.org/docs/config/reference#cursor-style-blink
 cursor-style-blink = false
+
+# https://ghostty.org/docs/config/reference#font-family
+font-family = RobotoMono Nerd Font
+
+# https://ghostty.org/docs/config/reference#font-feature
+font-feature = -dlig
+
+# https://ghostty.org/docs/config/reference#font-size
+font-size = 16
+
+# https://ghostty.org/docs/config/reference#macos-titlebar-style
+macos-titlebar-style = hidden
+
+# https://ghostty.org/docs/config/reference#macos-titlebar-proxy-icon
+macos-titlebar-proxy-icon = hidden
+
+# https://ghostty.org/docs/config/reference#macos-icon
+macos-icon = holographic
+
+# https://ghostty.org/docs/config/reference#theme
+# ghostty +list-themes
+theme = MaterialDesignColors
