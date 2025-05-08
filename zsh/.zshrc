@@ -1,13 +1,20 @@
-load_if_exists() {
-  if [ -r "$1" ]; then
+source_if_exists() {
+  if [ -f "$1" -a -r "$1" ]; then
     source "$1"
-  else
+  elif [ ! -e "$1" ]; then
+    # -e checks whether "$1" exists or not
     echo "$1 is ignored because it doesn't exist"
+  elif [ ! -f "$1" ]; then
+    # -f checks whether "$1" is a file or not
+    echo "$1 is ignored because it's not a file"
+  elif [ ! -r "$1" ]; then
+    # -r checks whether "$1" is readable or not
+    echo "$1 is ignored because it's not readable"
   fi
 }
 
 # Enable antigen (`brew` is enabled on `.zprofile` beforehand)
-load_if_exists "$(brew --prefix)/share/antigen/antigen.zsh"
+source_if_exists "$(brew --prefix)/share/antigen/antigen.zsh"
 
 # Enable starship
 eval "$(starship init zsh)"
@@ -44,9 +51,9 @@ if [ -n "$LS_COLORS" ]; then
 fi
 
 # Load custom aliases/functions
-load_if_exists "$DOTREPO/zsh/.extensions"
+source_if_exists "$DOTREPO/zsh/.extensions"
 
 # Load several dotfiles if exists
 for file in $HOME/.{local,variables}; do
-  load_if_exists "$file"
+  source_if_exists "$file"
 done
