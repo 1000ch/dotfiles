@@ -36,11 +36,14 @@ done
 
 antigen apply
 
+# Enable prompt to customize themes
+autoload -Uz promptinit; promptinit
+
 # Enable auto completion after loading zsh plugins
-autoload -Uz compinit && compinit
+autoload -Uz compinit; compinit
 
 # Enable colors
-autoload -Uz colors && colors
+autoload -Uz colors; colors
 
 # Export LS_COLORS
 eval "$(gdircolors)"
