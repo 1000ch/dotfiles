@@ -34,12 +34,12 @@ fork() {
 update() {
   brew update
   brew upgrade
-  antigen update
+  zimfw update
 }
 
 cleanup() {
   brew cleanup -s
-  antigen cleanup
+  zimfw clean
 }
 
 cleanup_zsh() {

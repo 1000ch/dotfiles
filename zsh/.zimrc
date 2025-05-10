@@ -1,0 +1,22 @@
+#!/bin/sh
+
+OHMYZSH_PLUGINS=(
+  "plugins/ssh-agent/ssh-agent.plugin.zsh"
+  "plugins/command-not-found"
+  "plugins/zsh-interactive-cd"
+)
+
+for ohmyzsh_plugin in "${OHMYZSH_PLUGINS[@]}" ; do
+  zmodule ohmyzsh/ohmyzsh --root "$ohmyzsh_plugin"
+done
+
+ZSH_PLUGINS=(
+  "zsh-users/zsh-history-substring-search"
+  "zsh-users/zsh-completions"
+  "zsh-users/zsh-autosuggestions"
+  "zsh-users/zsh-syntax-highlighting"
+)
+
+for zsh_plugin in "${ZSH_PLUGINS[@]}" ; do
+  zmodule "$zsh_plugin"
+done
