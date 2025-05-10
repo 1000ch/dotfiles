@@ -9,6 +9,7 @@ export DOTREPO=$GHQ_ROOT/github.com/1000ch/dotfiles
 # https://zsh.sourceforge.io/Doc/Release/Files.html
 export ZDOTDIR=$DOTREPO/zsh
 
-# Indicate that this is a place for antigen
-# https://github.com/zsh-users/antigen/wiki/Configuration
-export ADOTDIR=$ZDOTDIR/.antigen
+# Indicate that this is a place for zim
+# https://github.com/zimfw/zimfw?tab=readme-ov-file#set-up-zshrc
+export ZIM_HOME=$ZDOTDIR/.zim
+export ZIM_CONFIG_FILE=$ZDOTDIR/.zimrc
