@@ -21,6 +21,7 @@ brew "ruby-build"
 brew "starship"
 brew "vim"
 brew "zimfw"
+brew "zsh"
 
 cask "1password"
 cask "alt-tab"
