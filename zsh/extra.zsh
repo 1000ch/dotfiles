@@ -1,7 +1,5 @@
-#!/bin/sh
-
-# Load util/log.sh
-source "$DOTREPO/util/log.sh"
+# Load log.zsh
+source "$ZDOTDIR/log.zsh"
 
 # -a      Include directory entries whose names begin with a dot (‘.’).
 # -l      (The lowercase letter “ell”.) List files in the long format, as described in the The Long Format subsection below.

@@ -1,5 +1,3 @@
-#!/bin/sh
-
 typeset -g -A colors
 
 colors=(

@@ -34,7 +34,7 @@ if [ -n "$LS_COLORS" ]; then
 fi
 
 # Load custom aliases/functions
-source_if_exists "$DOTREPO/zsh/.extensions"
+source_if_exists "$DOTREPO/zsh/extra.zsh"
 
 # Load several dotfiles if exists
 for file in $HOME/.{local,variables}; do
