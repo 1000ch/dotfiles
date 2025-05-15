@@ -53,6 +53,18 @@ update() {
   zimfw update
 }
 
+update_git_repos() {
+  git_repos=($(ghq list -p))
+
+  for git_repo in "${git_repos[@]}"; do
+    if [ -d "$git_repo" ]; then
+      log "Updating $git_repo..." green
+      git -C "$git_repo" pull
+      log
+    fi
+  done
+}
+
 cleanup() {
   brew cleanup -s
   zimfw clean
