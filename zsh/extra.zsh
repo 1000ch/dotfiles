@@ -24,7 +24,6 @@ alias diskspace='df -P -kHl'
 alias apps='\ls -1 /Applications | sed s/.app// | fzf'
 alias repos='ghq list -p | fzf'
 alias repo='cd $(repos)'
-alias repo-open='gh-open $(repos)'
 alias vscode='code $(repos)'
 alias reload='exec -l $SHELL'
 
