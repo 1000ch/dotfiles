@@ -40,11 +40,7 @@ update() {
   git -C "$DOTREPO" pull
   log
 
-  log "Updating Homebrew..." green
-  brew update
-  log
-
-  log "Updating Homebrew packages..." green
+  log "Updating Homebrew and it's packages..." green
   brew upgrade
   log
 
