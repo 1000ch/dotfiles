@@ -16,12 +16,6 @@ font-feature = -dlig
 # https://ghostty.org/docs/config/reference#font-size
 font-size = 16
 
-# https://ghostty.org/docs/config/reference#macos-titlebar-style
-macos-titlebar-style = hidden
-
-# https://ghostty.org/docs/config/reference#macos-titlebar-proxy-icon
-macos-titlebar-proxy-icon = hidden
-
 # https://ghostty.org/docs/config/reference#macos-icon
 macos-icon = holographic
 
