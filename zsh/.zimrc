@@ -15,6 +15,7 @@ ZSH_PLUGINS=(
   "zsh-users/zsh-completions"
   "zsh-users/zsh-autosuggestions"
   "zsh-users/zsh-syntax-highlighting"
+  "paulirish/git-open"
 )
 
 for zsh_plugin in "${ZSH_PLUGINS[@]}" ; do
