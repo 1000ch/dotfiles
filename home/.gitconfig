@@ -1,6 +1,6 @@
 [user]
   name = 1000ch
-  email = shogosensui@gmail.com
+  email = shogo.sensui@gmail.com
 [core]
   excludesfile = ~/.gitignore
   deltaBaseCacheLimit = 1G
