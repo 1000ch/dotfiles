@@ -37,3 +37,5 @@ export PATH="$GOPATH/bin:$PATH"
 
 # GPG
 export GPG_TTY=$TTY
+
+export PATH="$HOME/bin:$PATH"
