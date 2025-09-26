@@ -21,4 +21,4 @@ macos-icon = holographic
 
 # https://ghostty.org/docs/config/reference#theme
 # ghostty +list-themes
-theme = MaterialDesignColors
+theme = Material Design Colors
