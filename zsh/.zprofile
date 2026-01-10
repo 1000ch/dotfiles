@@ -1,6 +1,9 @@
 # Enable Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# Disable following packages in Homebrew context
+export HOMEBREW_FORBIDDEN_FORMULAE="node python python3 pip npm pnpm"
+
 setopt auto_cd # omit cd to change directory
 setopt auto_list # show completion list
 setopt auto_menu # switch options by completion keys
