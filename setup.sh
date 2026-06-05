@@ -19,6 +19,7 @@ recreate_symlink "$DOTREPO/zsh/.zshenv" "$HOME/.zshenv"
 
 # These dotfiles will be symlinked to the same passes under the home directory
 DOTFILES=(
+  ".claude/skills"
   ".config/ghostty/config"
   ".config/starship.toml"
   ".editorconfig"
@@ -28,6 +29,7 @@ DOTFILES=(
 )
 
 # Create a directory before symlinking
+mkdir -p "$HOME/.claude"
 mkdir -p "$HOME/.config/ghostty"
 
 for dotfile in "${DOTFILES[@]}" ; do
