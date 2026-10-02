@@ -22,6 +22,9 @@ autoload -Uz promptinit; promptinit
 # Enable auto completion after loading zsh plugins
 autoload -Uz compinit; compinit
 
+# Enable gcloud completion
+[ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ] && source "$HOME/google-cloud-sdk/completion.zsh.inc"
+
 # Enable colors
 autoload -Uz colors; colors
 

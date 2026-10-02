@@ -38,6 +38,10 @@ eval "$(pyenv init -)"
 export GOPATH="$HOME/.go"
 export PATH="$GOPATH/bin:$PATH"
 
+# Google Cloud SDK (extracted tarball at $HOME/google-cloud-sdk)
+export CLOUDSDK_ROOT="$HOME/google-cloud-sdk"
+[ -f "$CLOUDSDK_ROOT/path.zsh.inc" ] && source "$CLOUDSDK_ROOT/path.zsh.inc"
+
 # GPG
 export GPG_TTY=$TTY
 
