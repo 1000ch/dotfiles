@@ -3,3 +3,10 @@
 1. Execute `mkdir -p ~/workspace/github.com/1000ch/dotfiles` to prepare the root for [ghq](https://github.com/x-motemen/ghq)
 2. Clone this repository via `git clone git@github.com:1000ch/dotfiles.git ~/workspace/github.com/1000ch/dotfiles` and execute `setup.sh` to prepare
 3. Install [Homebrew](https://brew.sh/) and execute `brew bundle --file ./Brewfile` to install Homebrew packages
+4. Create `~/.gitconfig.local` to set your Git identity, which is included from `.gitconfig`
+
+```ini
+[user]
+  name = Your Name
+  email = you@example.com
+```
