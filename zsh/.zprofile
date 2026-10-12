@@ -20,18 +20,14 @@ export LANG=ja_JP.UTF-8
 
 # nodenv
 export NODENV_ROOT="$HOME/.nodenv"
-export PATH="$NODENV_ROOT/bin:$PATH"
 eval "$(nodenv init -)"
 
 # rbenv
 export RBENV_ROOT="$HOME/.rbenv"
-export PATH="$RBENV_ROOT/bin:$PATH"
-export FPATH="$HOME/.rbenv/completions:$FPATH"
 eval "$(rbenv init -)"
 
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
 # gopath
