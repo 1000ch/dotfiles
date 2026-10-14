@@ -15,7 +15,12 @@ eval "$(starship init zsh)"
 autoload -Uz promptinit; promptinit
 
 # Enable auto completion after loading zsh plugins
-autoload -Uz compinit; compinit
+autoload -Uz compinit
+if [[ -d /opt/homebrew && ! -O /opt/homebrew ]]; then
+  compinit -u
+else
+  compinit
+fi
 
 # Enable gcloud completion
 [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ] && source "$HOME/google-cloud-sdk/completion.zsh.inc"
@@ -41,7 +46,7 @@ done
 
 # Install missing modules and update $ZIM_HOME/init.zsh if missing or outdated.
 if [[ ! $ZIM_HOME/init.zsh -nt $ZIM_CONFIG_FILE ]]; then
-  source_if_exists "$(brew --prefix)/opt/zimfw/share/zimfw.zsh" init
+  source_if_exists "$HOMEBREW_PREFIX/opt/zimfw/share/zimfw.zsh" init
 fi
 
 # Initialize zim modules.

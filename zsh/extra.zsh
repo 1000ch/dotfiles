@@ -35,6 +35,13 @@ fork() {
   open "$1" -a Fork
 }
 
+# Run brew as the owner of /opt/homebrew when it belongs to another user
+if [[ -d /opt/homebrew && ! -O /opt/homebrew ]]; then
+  brew() {
+    sudo -Hu "$(stat -f %Su /opt/homebrew)" /opt/homebrew/bin/brew "$@"
+  }
+fi
+
 update() {
   log "Updating dotfiles..." green
   git -C "$DOTREPO" pull
