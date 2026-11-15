@@ -51,10 +51,6 @@ update() {
   brew upgrade
   log
 
-  log "Updating zimfw..." green
-  zimfw upgrade
-  log
-
   log "Updating zimfw's packages..." green
   zimfw update
 }
